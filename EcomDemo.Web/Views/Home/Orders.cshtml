@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Orders";
+}
+ 
+<h3>@ViewData["Message"]</h3>
+@model IEnumerable<EcomDemo.Web.OrderDetail>
+  
+@foreach (var order in Model)
+ {
+<table>
+    <tr>
+        <td> Name:</td> <td>@order.OrderId</td>
+    </tr>
+    <tr>
+        <td> Date:</td>
+        <td>@order.OrderDate</td>
+    </tr>
+    <tr>
+        <td> Information:</td>
+        <td>@order.OrderInfo</td>
+    </tr>
+    
+</table>
+ <hr/>
+  }
+

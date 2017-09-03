@@ -30,8 +30,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="ServiceEventSource.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EcomDemo.Web\EcomDemo.Web.csproj" />
     <ProjectReference Include="..\OrderService\OrderService.csproj" />
     <ProjectReference Include="..\ProductService\ProductService.csproj" />
   </ItemGroup>
